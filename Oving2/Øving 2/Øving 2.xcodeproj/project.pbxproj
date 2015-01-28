@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		35702FFF1A77D1DF000F5FBF /* cannonball.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 35702FFD1A77D1DF000F5FBF /* cannonball.cpp */; };
+		355104491A7928A200C95250 /* cannonball.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 355104471A7928A200C95250 /* cannonball.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -23,9 +23,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		355104471A7928A200C95250 /* cannonball.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = cannonball.cpp; sourceTree = "<group>"; };
+		355104481A7928A200C95250 /* cannonball.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cannonball.h; sourceTree = "<group>"; };
 		35702FF31A77D175000F5FBF /* Øving 2 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Øving 2"; sourceTree = BUILT_PRODUCTS_DIR; };
-		35702FFD1A77D1DF000F5FBF /* cannonball.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = cannonball.cpp; path = ../../../../../../../cannonball.cpp; sourceTree = "<group>"; };
-		35702FFE1A77D1DF000F5FBF /* cannonball.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = cannonball.h; path = ../../../../../../../cannonball.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,6 +42,8 @@
 		35702FEA1A77D175000F5FBF = {
 			isa = PBXGroup;
 			children = (
+				355104471A7928A200C95250 /* cannonball.cpp */,
+				355104481A7928A200C95250 /* cannonball.h */,
 				35702FF51A77D175000F5FBF /* Øving 2 */,
 				35702FF41A77D175000F5FBF /* Products */,
 			);
@@ -58,8 +60,6 @@
 		35702FF51A77D175000F5FBF /* Øving 2 */ = {
 			isa = PBXGroup;
 			children = (
-				35702FFD1A77D1DF000F5FBF /* cannonball.cpp */,
-				35702FFE1A77D1DF000F5FBF /* cannonball.h */,
 			);
 			path = "Øving 2";
 			sourceTree = "<group>";
@@ -120,7 +120,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				35702FFF1A77D1DF000F5FBF /* cannonball.cpp in Sources */,
+				355104491A7928A200C95250 /* cannonball.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -234,6 +234,7 @@
 				35702FFC1A77D175000F5FBF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
