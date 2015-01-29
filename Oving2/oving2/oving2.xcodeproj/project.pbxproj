@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		353BE4B91A7A6D7100BEB019 /* utilities.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 353BE4B71A7A6D7100BEB019 /* utilities.cpp */; };
 		355104601A792C0D00C95250 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3551045F1A792C0D00C95250 /* main.cpp */; };
 		355104621A792E0900C95250 /* cannonball.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 355104611A792E0900C95250 /* cannonball.cpp */; };
 /* End PBXBuildFile section */
@@ -24,6 +25,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		353BE4B71A7A6D7100BEB019 /* utilities.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = utilities.cpp; path = Oving2/utilities.cpp; sourceTree = SOURCE_ROOT; };
+		353BE4B81A7A6D7100BEB019 /* utilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = utilities.h; path = Oving2/utilities.h; sourceTree = SOURCE_ROOT; };
 		355104541A792AD100C95250 /* oving2 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = oving2; sourceTree = BUILT_PRODUCTS_DIR; };
 		3551045E1A792AE100C95250 /* cannonball.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = cannonball.h; path = ../cannonball.h; sourceTree = "<group>"; };
 		3551045F1A792C0D00C95250 /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = main.cpp; path = ../main.cpp; sourceTree = "<group>"; };
@@ -63,6 +66,8 @@
 				3551045F1A792C0D00C95250 /* main.cpp */,
 				3551045E1A792AE100C95250 /* cannonball.h */,
 				355104611A792E0900C95250 /* cannonball.cpp */,
+				353BE4B71A7A6D7100BEB019 /* utilities.cpp */,
+				353BE4B81A7A6D7100BEB019 /* utilities.h */,
 			);
 			path = oving2;
 			sourceTree = "<group>";
@@ -101,7 +106,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 3551044F1A792AD100C95250 /* Build configuration list for PBXProject "oving2" */;
+			buildConfigurationList = 3551044F1A792AD100C95250 /* Build configuration list for PBXProject "Oving2" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -123,6 +128,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				353BE4B91A7A6D7100BEB019 /* utilities.cpp in Sources */,
 				355104601A792C0D00C95250 /* main.cpp in Sources */,
 				355104621A792E0900C95250 /* cannonball.cpp in Sources */,
 			);
@@ -222,7 +228,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		3551044F1A792AD100C95250 /* Build configuration list for PBXProject "oving2" */ = {
+		3551044F1A792AD100C95250 /* Build configuration list for PBXProject "Oving2" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				355104591A792AD100C95250 /* Debug */,
@@ -238,6 +244,7 @@
 				3551045D1A792AD100C95250 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -1,32 +1,41 @@
 #include "cannonball.h"
 
+/*
+ Horisontalt
+ a_x = 0
+ V_x = V_ox
+ x = V_ox * t
+ 
+ Vertikalt
+ a_y = -g
+ V_y = V_oy - gt => t = (V_oy - V_y)/ g
+ y = V_oy * t - 0.5 g * t * t
+ 
+ */
+
 
 double acclY(){ // 1a returnerer akselerasjonen i Y-retning
-    const double AKSELY = 9.81;
-    
-    return AKSELY;
+    const double G = 9.81;
+    return G;
     
 }
 
 double velY(double initVelocity, double time){ // 1b returnerer farten i y retning
     double fartY;
-
-    
     fartY = initVelocity + acclY() * time;
     return fartY;
 
 }
 
-double positionX(double initVelocity, double time){ //1d regner ut posisjonen i X retning
-    int startPosisjon = 0;
-    double posisjonX = startPosisjon + initVelocity * time + (acclY() * time * time / 2);
-    return posisjonX;
+double posX(double initVelocityX, double time){ //1d regner ut posisjonen i X retning
+    double X;
+    X = initVelocityX * time;
+    return X;
 }
 
-double positionY(double initVelocity, double time){ //1d regner ut posisjonen i Y retning
-    double posisjonY;
-    double posisjonY = startPosisjon + initVelocity * time + ( acclY() * time * time / 2);
-    return posisjonY;
+double posY(double initVelocityY, double time){ //1d regner ut posisjonen i Y retning
+    double Y = startPosisjonY + initVelocityY * time + 0.5 acclY() * time * time;
+    return Y;
 }
 
 void printTime(int seconds){ // tar inn tid i sekunder og returnerer ikke noe
