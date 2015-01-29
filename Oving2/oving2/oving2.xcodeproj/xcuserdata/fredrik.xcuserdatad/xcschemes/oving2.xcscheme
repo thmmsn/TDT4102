@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "35702FF21A77D175000F5FBF"
-               BuildableName = "&#xd8;ving 2"
-               BlueprintName = "&#xd8;ving 2"
-               ReferencedContainer = "container:&#xd8;ving 2.xcodeproj">
+               BlueprintIdentifier = "355104531A792AD100C95250"
+               BuildableName = "oving2"
+               BlueprintName = "oving2"
+               ReferencedContainer = "container:oving2.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -32,10 +32,10 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "35702FF21A77D175000F5FBF"
-            BuildableName = "&#xd8;ving 2"
-            BlueprintName = "&#xd8;ving 2"
-            ReferencedContainer = "container:&#xd8;ving 2.xcodeproj">
+            BlueprintIdentifier = "355104531A792AD100C95250"
+            BuildableName = "oving2"
+            BlueprintName = "oving2"
+            ReferencedContainer = "container:oving2.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </TestAction>
@@ -51,10 +51,10 @@
       <BuildableProductRunnable>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "35702FF21A77D175000F5FBF"
-            BuildableName = "&#xd8;ving 2"
-            BlueprintName = "&#xd8;ving 2"
-            ReferencedContainer = "container:&#xd8;ving 2.xcodeproj">
+            BlueprintIdentifier = "355104531A792AD100C95250"
+            BuildableName = "oving2"
+            BlueprintName = "oving2"
+            ReferencedContainer = "container:oving2.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -69,10 +69,10 @@
       <BuildableProductRunnable>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "35702FF21A77D175000F5FBF"
-            BuildableName = "&#xd8;ving 2"
-            BlueprintName = "&#xd8;ving 2"
-            ReferencedContainer = "container:&#xd8;ving 2.xcodeproj">
+            BlueprintIdentifier = "355104531A792AD100C95250"
+            BuildableName = "oving2"
+            BlueprintName = "oving2"
+            ReferencedContainer = "container:oving2.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

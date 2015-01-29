@@ -7,11 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		355104491A7928A200C95250 /* cannonball.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 355104471A7928A200C95250 /* cannonball.cpp */; };
+		355104601A792C0D00C95250 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3551045F1A792C0D00C95250 /* main.cpp */; };
+		355104621A792E0900C95250 /* cannonball.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 355104611A792E0900C95250 /* cannonball.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		35702FF11A77D175000F5FBF /* CopyFiles */ = {
+		355104521A792AD100C95250 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = /usr/share/man/man1/;
@@ -23,13 +24,14 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		355104471A7928A200C95250 /* cannonball.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = cannonball.cpp; sourceTree = "<group>"; };
-		355104481A7928A200C95250 /* cannonball.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cannonball.h; sourceTree = "<group>"; };
-		35702FF31A77D175000F5FBF /* Øving 2 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Øving 2"; sourceTree = BUILT_PRODUCTS_DIR; };
+		355104541A792AD100C95250 /* oving2 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = oving2; sourceTree = BUILT_PRODUCTS_DIR; };
+		3551045E1A792AE100C95250 /* cannonball.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = cannonball.h; path = ../cannonball.h; sourceTree = "<group>"; };
+		3551045F1A792C0D00C95250 /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = main.cpp; path = ../main.cpp; sourceTree = "<group>"; };
+		355104611A792E0900C95250 /* cannonball.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = cannonball.cpp; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		35702FF01A77D175000F5FBF /* Frameworks */ = {
+		355104511A792AD100C95250 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -39,95 +41,97 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		35702FEA1A77D175000F5FBF = {
+		3551044B1A792AD100C95250 = {
 			isa = PBXGroup;
 			children = (
-				355104471A7928A200C95250 /* cannonball.cpp */,
-				355104481A7928A200C95250 /* cannonball.h */,
-				35702FF51A77D175000F5FBF /* Øving 2 */,
-				35702FF41A77D175000F5FBF /* Products */,
+				355104561A792AD100C95250 /* oving2 */,
+				355104551A792AD100C95250 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		35702FF41A77D175000F5FBF /* Products */ = {
+		355104551A792AD100C95250 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				35702FF31A77D175000F5FBF /* Øving 2 */,
+				355104541A792AD100C95250 /* oving2 */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		35702FF51A77D175000F5FBF /* Øving 2 */ = {
+		355104561A792AD100C95250 /* oving2 */ = {
 			isa = PBXGroup;
 			children = (
+				3551045F1A792C0D00C95250 /* main.cpp */,
+				3551045E1A792AE100C95250 /* cannonball.h */,
+				355104611A792E0900C95250 /* cannonball.cpp */,
 			);
-			path = "Øving 2";
+			path = oving2;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		35702FF21A77D175000F5FBF /* Øving 2 */ = {
+		355104531A792AD100C95250 /* oving2 */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 35702FFA1A77D175000F5FBF /* Build configuration list for PBXNativeTarget "Øving 2" */;
+			buildConfigurationList = 3551045B1A792AD100C95250 /* Build configuration list for PBXNativeTarget "oving2" */;
 			buildPhases = (
-				35702FEF1A77D175000F5FBF /* Sources */,
-				35702FF01A77D175000F5FBF /* Frameworks */,
-				35702FF11A77D175000F5FBF /* CopyFiles */,
+				355104501A792AD100C95250 /* Sources */,
+				355104511A792AD100C95250 /* Frameworks */,
+				355104521A792AD100C95250 /* CopyFiles */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = "Øving 2";
-			productName = "Øving 2";
-			productReference = 35702FF31A77D175000F5FBF /* Øving 2 */;
+			name = oving2;
+			productName = oving2;
+			productReference = 355104541A792AD100C95250 /* oving2 */;
 			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		35702FEB1A77D175000F5FBF /* Project object */ = {
+		3551044C1A792AD100C95250 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0610;
 				ORGANIZATIONNAME = fredrik;
 				TargetAttributes = {
-					35702FF21A77D175000F5FBF = {
+					355104531A792AD100C95250 = {
 						CreatedOnToolsVersion = 6.1.1;
 					};
 				};
 			};
-			buildConfigurationList = 35702FEE1A77D175000F5FBF /* Build configuration list for PBXProject "Øving 2" */;
+			buildConfigurationList = 3551044F1A792AD100C95250 /* Build configuration list for PBXProject "oving2" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 			);
-			mainGroup = 35702FEA1A77D175000F5FBF;
-			productRefGroup = 35702FF41A77D175000F5FBF /* Products */;
+			mainGroup = 3551044B1A792AD100C95250;
+			productRefGroup = 355104551A792AD100C95250 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				35702FF21A77D175000F5FBF /* Øving 2 */,
+				355104531A792AD100C95250 /* oving2 */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		35702FEF1A77D175000F5FBF /* Sources */ = {
+		355104501A792AD100C95250 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				355104491A7928A200C95250 /* cannonball.cpp in Sources */,
+				355104601A792C0D00C95250 /* main.cpp in Sources */,
+				355104621A792E0900C95250 /* cannonball.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		35702FF81A77D175000F5FBF /* Debug */ = {
+		355104591A792AD100C95250 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -167,7 +171,7 @@
 			};
 			name = Debug;
 		};
-		35702FF91A77D175000F5FBF /* Release */ = {
+		3551045A1A792AD100C95250 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -201,14 +205,14 @@
 			};
 			name = Release;
 		};
-		35702FFB1A77D175000F5FBF /* Debug */ = {
+		3551045C1A792AD100C95250 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
 		};
-		35702FFC1A77D175000F5FBF /* Release */ = {
+		3551045D1A792AD100C95250 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -218,25 +222,24 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		35702FEE1A77D175000F5FBF /* Build configuration list for PBXProject "Øving 2" */ = {
+		3551044F1A792AD100C95250 /* Build configuration list for PBXProject "oving2" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				35702FF81A77D175000F5FBF /* Debug */,
-				35702FF91A77D175000F5FBF /* Release */,
+				355104591A792AD100C95250 /* Debug */,
+				3551045A1A792AD100C95250 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		35702FFA1A77D175000F5FBF /* Build configuration list for PBXNativeTarget "Øving 2" */ = {
+		3551045B1A792AD100C95250 /* Build configuration list for PBXNativeTarget "oving2" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				35702FFB1A77D175000F5FBF /* Debug */,
-				35702FFC1A77D175000F5FBF /* Release */,
+				3551045C1A792AD100C95250 /* Debug */,
+				3551045D1A792AD100C95250 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 35702FEB1A77D175000F5FBF /* Project object */;
+	rootObject = 3551044C1A792AD100C95250 /* Project object */;
 }
