@@ -1,0 +1,76 @@
+# OPERATORER 
+	Medlemsoperatoren
+		(.) variabelnavn.medlem
+	
+
+# STRUCTS
+Alt er default public: i structs
+	struct Circle{
+		double radius;
+		double color;
+
+	}
+
+	Circle c = {5.6, BLACK};
+
+	int a = c.radius;
+
+De struct typene vi lager er “ukjente” for operatorer som *+-<>== ..
+
+#include <iostream>
+#include <ctime>
+
+using namespace std;
+
+enum Color {BLACK, WHITE, GREY};
+const double PI = 3.14;
+
+struct Circle{
+    double radius;
+    Color color;
+};
+
+double areal(Circle c){
+
+    return c.radius * c.radius * PI;
+}
+
+
+int main(){
+    Circle c = {5.6, BLACK};
+    c.radius = 5.6;
+    c.color = WHITE;
+
+    cout << "Areal " << areal(c) << endl;
+}
+
+# KLASSER
+Ved hjelp av class kan vi definere data elementene og funksjonene som en samlet type
+
+### EKSEMPEL
+class Circle{
+public: //Hva betyr public?
+	double radius;
+	double areal();
+	double circumference();
+}
+
+Vi kan lage arrays av sirkler.
+Circle sirkler[100]
+
+class 1 = class2 setter class1 lik class 2
+
+Som hvilkensomhelst annen datatype
+
+• Metoder kalles vha a.medlem = 5;
+• Vanlig å implementere funksjoner først og så kalle de senere.
+
+## PUBLIC 	VS	PRIVATE
+hva som skal være synlig for ekstern kode.
+i main så kan vi lese og skrive alt som er public. setter vi det derimot som private så får vi ikke lov til å skrive til klassene. Vanligvis en privat del og en public del. Funksjoner er public og medlemsvariabler er private.
+
+Medlemsfunksjoner får lese/skrive tilgang til kalssen
+
+Sett variabler til private og kalle en medlemsfunksjon som skriver til de.
+
+
