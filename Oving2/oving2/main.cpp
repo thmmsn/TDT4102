@@ -2,9 +2,6 @@
 #include "cannonball.h"
 #include "utilities.h"
 
-
-//#include "utilities.h"
-
 using namespace std;
 
 void Cannonball(){
@@ -23,10 +20,8 @@ void Cannonball(){
 }
 
 void CannonballExtended(){
-    
-    getUserInput(theta, absVelocity)
-    
-    
+    double *theta, *absVelocity;
+    getUserInput(*theta, *absVelocity);
 }
 
 void TilfeldigTall(){
@@ -43,18 +38,22 @@ void TilfeldigTall(){
     }
 }
 
+void visValg(){
+    cout << "Velg\t" << "oppgave2" << endl;
+    cout << "1\t" << "Cannonball" << endl;
+    cout << "2\t" << "CannonballExtended" << endl;
+    cout << "3\t" << "Tilfeldig tall" << endl;
+    cout << "10\t" << "AVBRYT" << endl;
+    cout << "Velg: ";
+}
+
 
 int main(){
     int check = 0;
     
     while(check != 10){
     
-        cout << "Velg\t" << "oppgave2" << endl;
-        cout << "1\t" << "Cannonball" << endl;
-        cout << "2\t" << "CannonballExtended" << endl;
-        cout << "3\t" << "Tilfeldig tall" << endl;
-        cout << "10\t" << "AVBRYT" << endl;
-        cout << "Velg: ";
+        visValg();
         cin >> check;
 
         switch (check)
@@ -63,9 +62,6 @@ int main(){
                     Cannonball();
                 break;
                 case 2:
-                    CannonballExtened();
-                break;
-                case 3:
                     TilfeldigTall();
                 break;
         }

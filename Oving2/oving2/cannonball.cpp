@@ -1,4 +1,5 @@
 #include <iostream>
+#include <cmath>
 #include "cannonball.h"
 
 using namespace std;
@@ -14,30 +15,25 @@ double acclY(){ // 1a returnerer akselerasjonen i Y-retning
     return G;
     
 }
-
 double velX(double initVelocity, double time){ // 1b returnerer farten i y retning
     double fartX;
     fartX = initVelocity;
     return fartX;
 }
-
 double velY(double initVelocity, double time){ // 1b returnerer farten i y retning
     double fartY = initVelocity + acclY() * time;
     return fartY;    
 }
-
 double posX(double initVelocity, double time){ //1d regner ut posisjonen i X retning
     
     double posisjonX = initVelocity * time;
     return posisjonX;
 }
-
 double posY(double initVelocity, double time){ //1d regner ut posisjonen i Y retning
     
     double posisjonY = initVelocity * time + ( acclY() * time * time / 2.0);
     return posisjonY;
 }
-
 void printTime(int seconds){ // tar inn tid i sekunder og returnerer ikke noe
     
     const int kSecsInHour = 3600;
@@ -56,8 +52,7 @@ void printTime(int seconds){ // tar inn tid i sekunder og returnerer ikke noe
     cout << timer << ":" << minutter << ":" << sekunder << endl;
     
 }
-
-int FlightTime(double initVelocity){ // tar inn startfarten i Y retning og returnerer flytiden i sekunder
+double FlightTime(double initVelocity){ // tar inn startfarten i Y retning og returnerer flytiden i sekunder
     double time = 0;
     double d = 0.1;
     while (0 < velY(initVelocity, time)) {
@@ -69,34 +64,60 @@ int FlightTime(double initVelocity){ // tar inn startfarten i Y retning og retur
 }
 
 
-// Oppgave 4 ---- - ---- -- - -
+// Oppgave 4 - - - - - - - - - - - - - //
 
 void getUserInput(double *theta, double *absVelocity){
-
+    cout << "Velg vinkel (grader): ";
+    cin >> *theta;
+    cout << "Velg starthastighet: ";
+    cin >>  *absVelocity;
 }
 
-double getVelocityX(theta, absVelocity){
+double getVelocityX(double *theta, double *absVelocity){ // sin/cos tar inn radianer
     double fartX;
-    fartX = absVelocity * Cos(theta);
+        fartX = *absVelocity * cos(*theta * 3.14 / 180);
     return fartX;
 }
 
-double getVelocityY(*theta, absVelocity){
+double getVelocityY(double *theta, double *absVelocity){
     double fartY;
-    fartY = absVelocity * Sin(theta);
+    fartY = *absVelocity * sin(*theta * 3.14 / 180);
     return fartY;
 }
 
-void getVelocityVector(theta, absVelocity, double *velocityX, double *velocityY){
-    
+void getVelocityVector(double *theta, double *absVelocity, double *velocityX, double *velocityY){
+    *velocityX = getVelocityX(*theta, *absVelocity);
+    *velocityY = getVelocityY(*theta, *absVelocity);
     
 }
 
 double getDistanceTraveled(double velocityX, double velocityY){
+    //finner tiden med flightTime og avstanden i x retning.
+    double flyTid = flightTime(velocityY);
+    double distanceTraveled = flyTid * velocityX;
+    return distanceTraveled;
     
 }
 
 double targetPractice(double distanceToTarget, double velocityX, double velocityY){
+    // while eller 10 forsøk, abs er innenfor 5 avstand fra mål
+    
+    for (int i = 0; i<= 10; i++){
+
+        double touchDown = getDistanceTraveled(velocityX, velocityY);
+        
+        if(abs(distanceToTarget - touchDown) <= 5){
+            cout << "Gratulerer med treffsikkerheten" << endl;
+            return distanceToTarget - touchDown;
+        }
+        else{
+            cout << "Avviket fra målet: " << distanceToTarget - touchDown << endl;
+            cout << "Prøv igjen" << endl;
+            getUserInput(double *theta, double *absVelocity);
+           }
+        
+
+    }
     
     
 }

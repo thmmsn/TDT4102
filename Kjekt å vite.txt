@@ -65,7 +65,7 @@ Som hvilkensomhelst annen datatype
 • Metoder kalles vha a.medlem = 5;
 • Vanlig å implementere funksjoner først og så kalle de senere.
 
-## PUBLIC 	VS	PRIVATE
+## PUBLIC 	VS		PRIVATE
 hva som skal være synlig for ekstern kode.
 i main så kan vi lese og skrive alt som er public. setter vi det derimot som private så får vi ikke lov til å skrive til klassene. Vanligvis en privat del og en public del. Funksjoner er public og medlemsvariabler er private.
 
@@ -73,4 +73,47 @@ Medlemsfunksjoner får lese/skrive tilgang til kalssen
 
 Sett variabler til private og kalle en medlemsfunksjon som skriver til de.
 
+## OPERATORER
++ / - * %
 
+variabel+ 		: betyr variabel = variabel + 1
+variabel++ 	: er variabel = variabel + 2
+33.0 % 3.0 	: gir ikke mening modulo int % int = int
+
+## VARIABLER
+- Globale variabler bør begrenses til det strengt nødvendige
+— anvendelige 
+- Levetiden til variabler begrenses til {•••}-løkken de er deklarert i. 
+-  Følgende konverteringsrekkefølge
+char => int => float => double
+char + int = int, int + float = float, char + float = float.
+
+## CASTING	static_cast<type>(), type{char, int, float, double}
+static_cast<int>(3.14) = 3
+static_cast<int>(3.0) % 2 = 1
+static_cast<double>(3)/2 = 1.5
+static_cast<double>(3/2) = 1
+
+! Casting runder av nedover som en floor-funksjon
+
+## KRØLLPARANTESER
+{
+	int y = 19;
+	cout << y << endl;
+}
+
+Det er ikke nødvendig å deklarere en funksjon. For å bruke krøllparanteser. Hvordan få adgang til en slik løkke?
+
+# DEBUGGING
+
+## CALL BY REFERENCE
+int function(*b, a, c){
+	*b = a + c;
+	return *b;
+}
+
+int function(b, a, c, &x0, &x1){
+	x0 = a + c;
+	x1 = a*b*c
+	return *b;
+}
