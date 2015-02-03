@@ -117,3 +117,29 @@ int function(b, a, c, &x0, &x1){
 	x1 = a*b*c
 	return *b;
 }
+
+## include <string>
+bibliotek for å behandle stringer.
+
+ int main(){
+	string s;
+	string s1 = “Hello”;
+	string s2 = “World”;
+	string s3 = s1 + s2;
+	cout << s3;
+}
+
+getline(cin, s) // er en funksjon som henter en hel linje med test.
+
+int main(){
+	cout << “skriv tekst”;
+	getline(cin, s); //linje med skrift er helt til enter
+	cout << s << endl;
+}
+
+## include <vector>
+tilgang til en datatype som heter vector. En container tilsvarende en tabell. 
+
+int main(){
+	
+}
