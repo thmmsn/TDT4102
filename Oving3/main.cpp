@@ -7,4 +7,16 @@
 //
 
 #include <iostream>
-#include <<#header#>>
+#include "choiceMenu.h"
+
+using namespace std;
+
+int main(){
+    int choice = 1;
+    while(choice != 0){
+        printMenu();
+        choice = inputChoice();
+        executeChoice(choice);
+    }
+}
+
