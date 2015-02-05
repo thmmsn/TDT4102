@@ -13,5 +13,7 @@
 
 void testPart1();
 void testPart2();
+void testPart3();
+void incrementByValueNumTimes(int* startValue, int increment, int numTimes);
 
 #endif /* defined(__Oving3__tests__) */

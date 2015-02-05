@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3550987E1A83C92800F52C79 /* mastermind.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3550987C1A83C92800F52C79 /* mastermind.cpp */; };
 		35EB257F1A80D7C50000629E /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 35EB257D1A80D7C50000629E /* main.cpp */; };
 		35EB25821A80DA070000629E /* tests.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 35EB25801A80DA070000629E /* tests.cpp */; };
 		35EB25851A80E0210000629E /* choiceMenu.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 35EB25831A80E0210000629E /* choiceMenu.cpp */; };
@@ -26,6 +27,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		3550987C1A83C92800F52C79 /* mastermind.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = mastermind.cpp; sourceTree = SOURCE_ROOT; };
+		3550987D1A83C92800F52C79 /* mastermind.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mastermind.h; sourceTree = SOURCE_ROOT; };
 		35EB25731A80D7AB0000629E /* Oving3 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Oving3; sourceTree = BUILT_PRODUCTS_DIR; };
 		35EB257D1A80D7C50000629E /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = SOURCE_ROOT; };
 		35EB25801A80DA070000629E /* tests.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = tests.cpp; sourceTree = SOURCE_ROOT; };
@@ -67,6 +70,8 @@
 			isa = PBXGroup;
 			children = (
 				35EB25831A80E0210000629E /* choiceMenu.cpp */,
+				3550987C1A83C92800F52C79 /* mastermind.cpp */,
+				3550987D1A83C92800F52C79 /* mastermind.h */,
 				35EB25841A80E0210000629E /* choiceMenu.h */,
 				35EB257D1A80D7C50000629E /* main.cpp */,
 				35EB25801A80DA070000629E /* tests.cpp */,
@@ -135,6 +140,7 @@
 			files = (
 				35EB257F1A80D7C50000629E /* main.cpp in Sources */,
 				35EB25821A80DA070000629E /* tests.cpp in Sources */,
+				3550987E1A83C92800F52C79 /* mastermind.cpp in Sources */,
 				35EB25881A80EAD20000629E /* utilities.cpp in Sources */,
 				35EB25851A80E0210000629E /* choiceMenu.cpp in Sources */,
 			);
@@ -250,6 +256,7 @@
 				35EB257C1A80D7AB0000629E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

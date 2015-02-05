@@ -14,5 +14,6 @@
 void printMenu();
 int inputChoice();
 void executeChoice(int choice);
+int waitForInput();
 
 #endif /* defined(__Oving3__menu__) */

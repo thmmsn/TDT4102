@@ -1,40 +1,55 @@
-//
-//  tests.cpp
-//  Oving3
-//
-//  Created by fredrik on 03/02/15.
-//  Copyright (c) 2015 fredrik. All rights reserved.
-//
-
-#include "tests.h"
 #include <iostream>
 #include <array>
+#include <iomanip>
+#include "tests.h"
+#include "utilities.h"
 
 using namespace std;
 
-int incrementByValueNumTimes(int startValue, int increment, int numTimes){
-    
+void incrementByValueNumTimes(int* startValue, int increment, int numTimes){
     for (int i = 0; i < numTimes; i++) {
-        startValue += increment;
+        *startValue += increment;
     }
-    return startValue;
-    
 }
-
 void testPart1(){
     int v0 = 5;
     int increment = 2;
     int iterations = 10;
-    incrementByValueNumTimes(v0, increment, iterations);
-    
-    int result = incrementByValueNumTimes(v0, increment, iterations);
-    cout << "v0: " << v0 << " increment: " << increment << " iterations: " << iterations << " result: " << result << endl;
+    incrementByValueNumTimes(&v0, increment, iterations);
+
+    cout << "v0: " << v0 << " increment: " << increment << " iterations: " << iterations << " result: " << endl;
 
 }
-
 void testPart2(){
-    int percentages[20];
+    int percentage[20];
+    int kSize = 20;
+    int median1, median2;
+    randomizeArray(percentage, kSize);
+    printArray(percentage);
+    median1 = medianOfArray(percentage, kSize);
+    cout << "Usortert median: " << median1 << endl;
+    sortArray(percentage, kSize);
+    
+//    for(int i = 0; i<kSize; i++){
+//        cout << i << ": " << percentage[i] << endl;
+//    }
+    
+    median2 = medianOfArray(percentage, kSize);
+    cout << "Medianen er: " << median2 << endl;
 }
 
-// Oppgave 1a returnerer    v0: 5 increment: 2 iterations: 10 result: 25
-//                          Program ended with exit code: 0
+
+void testPart3(){
+    int length, counter, gradeTable[6];
+    double average;
+    char lower = 'A', upper = 'E', grades[40];
+    
+//  readInputToCstring(grades, lower, upper);
+    randomizeCString(grades, lower, upper);
+    gradeCount(grades, 40, 'A', gradeTable);
+    average = gradeAverage(gradeTable);
+    average = average;
+    cout << setprecision(2) << average << ": Er gjennomsnittet" << endl;
+    
+    
+}

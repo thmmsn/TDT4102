@@ -12,19 +12,25 @@
 #include <iostream>
 
 using namespace std;
-
 void printMenu(){
-    string list[] = {"AVBRYT", "testPart1()", "swapNumbers", "randomWithLimits()" "testPart2()"};
+    int length = 6;
+    string list[] = {"AVBRYT", "testPart1()", "swapNumbers", "randomWithLimits()","testPart2()", "testPart3()", "playMastermind()"};
 
-    for (int i = 0; i<=4; i++){
+    for (int i = 0; i<=length; i++){
         cout << i << ":\t" << list[i] << endl;
     }
     
     cout << "Velg: ";
 }
-
 int inputChoice(){
     int choice;
+    cin >> choice;
+    return choice;
+}
+int waitForInput(){
+    int choice;
+    cout << "1 for å fortsette" << endl;
+    cout << "0 for å avbryte" << endl;
     cin >> choice;
     return choice;
 }
@@ -53,6 +59,13 @@ void executeChoice(int choice){
             break;
         case 4:
             testPart2();
+            break;
+        case 5:
+            testPart3();
+            break;
+        case 6:
+            //playMastermind();
+            cout << "Play" << endl;
             break;
             
     

@@ -12,11 +12,15 @@
 using namespace std;
 
 int main(){
+    srand(time(NULL));
     int choice = 1;
     while(choice != 0){
         printMenu();
         choice = inputChoice();
         executeChoice(choice);
+//        choice = waitForInput();
+//        executeChoice(choice);
+
     }
 }
 

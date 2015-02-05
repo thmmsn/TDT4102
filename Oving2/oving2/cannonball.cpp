@@ -1,6 +1,7 @@
 #include <iostream>
 #include <cmath>
 #include "cannonball.h"
+#include "utilities.h"
 
 using namespace std;
 
@@ -100,20 +101,27 @@ double getDistanceTraveled(double velocityX, double velocityY){
 }
 
 double targetPractice(double distanceToTarget, double velocityX, double velocityY){
-    // while eller 10 forsøk, abs er innenfor 5 avstand fra mål
+    return distanceToTarget - getDistanceTraveled(velocityX, velocityY);
     
+    
+}
+void playTargetPractice(){
+    // while eller 10 forsøk, abs er innenfor 5 avstand fra mål
+    double myTarget = randomWithLimits(1000,100);
     for (int i = 0; i<= 10; i++){
+        double theta, absvel;
+        getUserInput(&theta, &absvel);
+        double velocityX, velocityY;
+        getVelocityVector(&theta, &absvel, &velocityX, &velocityY);
+        double avvik = targetPractice(myTarget, velocityX, velocityY );
 
-        double touchDown = getDistanceTraveled(velocityX, velocityY);
-        
-        if(abs(distanceToTarget - touchDown) <= 5){
+        if(abs(avvik) <= 5){
             cout << "Gratulerer med treffsikkerheten" << endl;
-            return distanceToTarget - touchDown;
         }
+
         else{
-            cout << "Avviket fra målet: " << distanceToTarget - touchDown << endl;
+            cout << "Avviket fra målet: " << avvik << endl;
             cout << "Prøv igjen" << endl;
-            getUserInput(double *theta, double *absVelocity);
            }
         
 
@@ -121,4 +129,6 @@ double targetPractice(double distanceToTarget, double velocityX, double velocity
     
     
 }
+
+
 

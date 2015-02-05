@@ -12,5 +12,13 @@
 #include <stdio.h>
 int swapNumbers(int num1, int num2);
 int randomWithLimits(int lower, int upper);
-
+void printArray(int myArr[]);
+void randomizeArray(int myArr[], int length);
+void sortArray(int myArr[], int kSize);
+double medianOfArray(int myArr[], int kSize);
+void randomizeCString(char cString[], char lower, char upper);
+void readInputToCstring(char grades[], char lower, char upper);
+int countOccurencesOfCharacter(char grades[], int length, char sign);
+void gradeCount(char grades[], int length, char sign, int gradeTable[]);
+double gradeAverage(int gradeTable[]);
 #endif /* defined(__Oving3__utilities__) */
