@@ -9,6 +9,7 @@
 #include <stdio.h>
 #include <iostream>
 #include <string>
+<<<<<<< HEAD
 
 using namespace std;
 
@@ -87,14 +88,30 @@ string rankToString(CardStruct theCard){
     }
     return rr;
 }
+=======
+#include "enumeration.h"
+#include "card.h"
+#include "CardDeck.h"
+#include "BlackJack.h"
+
+
+using namespace std;
+>>>>>>> FETCH_HEAD
 
 
 int main(){
 
+<<<<<<< HEAD
     struct CardStruct card;
     card.s = {CLUBS};
     card.r = {THREE};
     
     toString(card);
+=======
+    BlackJack spill;
+    
+    spill.playGame();
+
+>>>>>>> FETCH_HEAD
     
 }
