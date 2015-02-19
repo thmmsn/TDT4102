@@ -7,15 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		352765E51A8CD1BD0091A8A8 /* enumeration.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 352765E31A8CD1BD0091A8A8 /* enumeration.cpp */; };
-		352765E81A8CD98F0091A8A8 /* card.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 352765E61A8CD98F0091A8A8 /* card.cpp */; };
-		352765EB1A8CE2850091A8A8 /* CardDeck.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 352765E91A8CE2850091A8A8 /* CardDeck.cpp */; };
-		352765EE1A8D00C30091A8A8 /* BlackJack.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 352765EC1A8D00C30091A8A8 /* BlackJack.cpp */; };
-		3576A8101A89363100EF854C /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3576A80F1A89363100EF854C /* main.cpp */; };
+		350A24C81A8E360900FD4A05 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 350A24C71A8E360900FD4A05 /* main.cpp */; };
+		350A24D01A8E36D500FD4A05 /* Matrix2x2.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 350A24CE1A8E36D400FD4A05 /* Matrix2x2.cpp */; };
+		351964981A9618C30014128D /* Vector2.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 351964961A9618C30014128D /* Vector2.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		3576A8031A89361000EF854C /* CopyFiles */ = {
+		350A24C21A8E360900FD4A05 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = /usr/share/man/man1/;
@@ -27,20 +25,16 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		352765E31A8CD1BD0091A8A8 /* enumeration.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = enumeration.cpp; sourceTree = SOURCE_ROOT; };
-		352765E41A8CD1BD0091A8A8 /* enumeration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = enumeration.h; sourceTree = SOURCE_ROOT; };
-		352765E61A8CD98F0091A8A8 /* card.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = card.cpp; sourceTree = SOURCE_ROOT; };
-		352765E71A8CD98F0091A8A8 /* card.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = card.h; sourceTree = SOURCE_ROOT; };
-		352765E91A8CE2850091A8A8 /* CardDeck.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CardDeck.cpp; sourceTree = SOURCE_ROOT; };
-		352765EA1A8CE2850091A8A8 /* CardDeck.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CardDeck.h; sourceTree = SOURCE_ROOT; };
-		352765EC1A8D00C30091A8A8 /* BlackJack.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = BlackJack.cpp; sourceTree = SOURCE_ROOT; };
-		352765ED1A8D00C30091A8A8 /* BlackJack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BlackJack.h; sourceTree = SOURCE_ROOT; };
-		3576A8051A89361000EF854C /* Oving4 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Oving4; sourceTree = BUILT_PRODUCTS_DIR; };
-		3576A80F1A89363100EF854C /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = SOURCE_ROOT; };
+		350A24C41A8E360900FD4A05 /* Oving5 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Oving5; sourceTree = BUILT_PRODUCTS_DIR; };
+		350A24C71A8E360900FD4A05 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		350A24CE1A8E36D400FD4A05 /* Matrix2x2.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Matrix2x2.cpp; sourceTree = "<group>"; };
+		350A24CF1A8E36D500FD4A05 /* Matrix2x2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Matrix2x2.h; sourceTree = "<group>"; };
+		351964961A9618C30014128D /* Vector2.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Vector2.cpp; sourceTree = "<group>"; };
+		351964971A9618C30014128D /* Vector2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Vector2.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		3576A8021A89361000EF854C /* Frameworks */ = {
+		350A24C11A8E360900FD4A05 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -50,106 +44,100 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		3576A7FC1A89361000EF854C = {
+		350A24BB1A8E360900FD4A05 = {
 			isa = PBXGroup;
 			children = (
-				3576A8071A89361000EF854C /* Oving4 */,
-				3576A8061A89361000EF854C /* Products */,
+				350A24C61A8E360900FD4A05 /* Oving5 */,
+				350A24C51A8E360900FD4A05 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		3576A8061A89361000EF854C /* Products */ = {
+		350A24C51A8E360900FD4A05 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				3576A8051A89361000EF854C /* Oving4 */,
+				350A24C41A8E360900FD4A05 /* Oving5 */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		3576A8071A89361000EF854C /* Oving4 */ = {
+		350A24C61A8E360900FD4A05 /* Oving5 */ = {
 			isa = PBXGroup;
 			children = (
-				3576A80F1A89363100EF854C /* main.cpp */,
-				352765E31A8CD1BD0091A8A8 /* enumeration.cpp */,
-				352765E41A8CD1BD0091A8A8 /* enumeration.h */,
-				352765E61A8CD98F0091A8A8 /* card.cpp */,
-				352765E71A8CD98F0091A8A8 /* card.h */,
-				352765E91A8CE2850091A8A8 /* CardDeck.cpp */,
-				352765EC1A8D00C30091A8A8 /* BlackJack.cpp */,
-				352765ED1A8D00C30091A8A8 /* BlackJack.h */,
-				352765EA1A8CE2850091A8A8 /* CardDeck.h */,
+				350A24C71A8E360900FD4A05 /* main.cpp */,
+				350A24CE1A8E36D400FD4A05 /* Matrix2x2.cpp */,
+				350A24CF1A8E36D500FD4A05 /* Matrix2x2.h */,
+				351964961A9618C30014128D /* Vector2.cpp */,
+				351964971A9618C30014128D /* Vector2.h */,
 			);
-			path = Oving4;
+			path = Oving5;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		3576A8041A89361000EF854C /* Oving4 */ = {
+		350A24C31A8E360900FD4A05 /* Oving5 */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 3576A80C1A89361000EF854C /* Build configuration list for PBXNativeTarget "Oving4" */;
+			buildConfigurationList = 350A24CB1A8E360900FD4A05 /* Build configuration list for PBXNativeTarget "Oving5" */;
 			buildPhases = (
-				3576A8011A89361000EF854C /* Sources */,
-				3576A8021A89361000EF854C /* Frameworks */,
-				3576A8031A89361000EF854C /* CopyFiles */,
+				350A24C01A8E360900FD4A05 /* Sources */,
+				350A24C11A8E360900FD4A05 /* Frameworks */,
+				350A24C21A8E360900FD4A05 /* CopyFiles */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = Oving4;
-			productName = Oving4;
-			productReference = 3576A8051A89361000EF854C /* Oving4 */;
+			name = Oving5;
+			productName = Oving5;
+			productReference = 350A24C41A8E360900FD4A05 /* Oving5 */;
 			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		3576A7FD1A89361000EF854C /* Project object */ = {
+		350A24BC1A8E360900FD4A05 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0610;
 				ORGANIZATIONNAME = fredrik;
 				TargetAttributes = {
-					3576A8041A89361000EF854C = {
+					350A24C31A8E360900FD4A05 = {
 						CreatedOnToolsVersion = 6.1.1;
 					};
 				};
 			};
-			buildConfigurationList = 3576A8001A89361000EF854C /* Build configuration list for PBXProject "Oving4" */;
+			buildConfigurationList = 350A24BF1A8E360900FD4A05 /* Build configuration list for PBXProject "Oving5" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 			);
-			mainGroup = 3576A7FC1A89361000EF854C;
-			productRefGroup = 3576A8061A89361000EF854C /* Products */;
+			mainGroup = 350A24BB1A8E360900FD4A05;
+			productRefGroup = 350A24C51A8E360900FD4A05 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				3576A8041A89361000EF854C /* Oving4 */,
+				350A24C31A8E360900FD4A05 /* Oving5 */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		3576A8011A89361000EF854C /* Sources */ = {
+		350A24C01A8E360900FD4A05 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3576A8101A89363100EF854C /* main.cpp in Sources */,
-				352765E51A8CD1BD0091A8A8 /* enumeration.cpp in Sources */,
-				352765EB1A8CE2850091A8A8 /* CardDeck.cpp in Sources */,
-				352765E81A8CD98F0091A8A8 /* card.cpp in Sources */,
-				352765EE1A8D00C30091A8A8 /* BlackJack.cpp in Sources */,
+				350A24C81A8E360900FD4A05 /* main.cpp in Sources */,
+				351964981A9618C30014128D /* Vector2.cpp in Sources */,
+				350A24D01A8E36D500FD4A05 /* Matrix2x2.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		3576A80A1A89361000EF854C /* Debug */ = {
+		350A24C91A8E360900FD4A05 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -189,7 +177,7 @@
 			};
 			name = Debug;
 		};
-		3576A80B1A89361000EF854C /* Release */ = {
+		350A24CA1A8E360900FD4A05 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -223,14 +211,14 @@
 			};
 			name = Release;
 		};
-		3576A80D1A89361000EF854C /* Debug */ = {
+		350A24CC1A8E360900FD4A05 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
 		};
-		3576A80E1A89361000EF854C /* Release */ = {
+		350A24CD1A8E360900FD4A05 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -240,25 +228,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		3576A8001A89361000EF854C /* Build configuration list for PBXProject "Oving4" */ = {
+		350A24BF1A8E360900FD4A05 /* Build configuration list for PBXProject "Oving5" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				3576A80A1A89361000EF854C /* Debug */,
-				3576A80B1A89361000EF854C /* Release */,
+				350A24C91A8E360900FD4A05 /* Debug */,
+				350A24CA1A8E360900FD4A05 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		3576A80C1A89361000EF854C /* Build configuration list for PBXNativeTarget "Oving4" */ = {
+		350A24CB1A8E360900FD4A05 /* Build configuration list for PBXNativeTarget "Oving5" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				3576A80D1A89361000EF854C /* Debug */,
-				3576A80E1A89361000EF854C /* Release */,
+				350A24CC1A8E360900FD4A05 /* Debug */,
+				350A24CD1A8E360900FD4A05 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 3576A7FD1A89361000EF854C /* Project object */;
+	rootObject = 350A24BC1A8E360900FD4A05 /* Project object */;
 }
