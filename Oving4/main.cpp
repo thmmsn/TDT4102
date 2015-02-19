@@ -8,10 +8,12 @@
 
 #include <stdio.h>
 #include <iostream>
+#include <string>
+
 using namespace std;
 
-enum Suit {CLUBS = 0, DIAMONDS = 1, HEARTS = 2, SPADES = 3};
-enum Rank {TWO = 2, THREE = 3, FOUR = 4, FIVE = 5, SIX = 6, SEVEN = 7, EIGHT = 8, NINE = 9, TEN = 10, JACK = 11, QUEEN = 12, KING = 13, ACE = 14};
+enum Suit {CLUBS, DIAMONDS, HEARTS, SPADES};
+enum Rank {TWO, THREE, FOUR, FIVE, SIX, SEVEN, EIGHT, NINE, TEN, JACK, QUEEN, KING, ACE};
 
 struct CardStruct{
      Suit s;
@@ -19,81 +21,80 @@ struct CardStruct{
 };
 
 void toString(CardStruct theCard){
-
-
-    
+    suitToString(theCard);
+    cout << theCard.s << " of " << theCard.r << endl;
 }
-string suitToString(enum Suit s){
-    switch (s) {
+string suitToString(CardStruct theCard){
+    string ss;
+    switch (theCard.s) {
         case CLUBS:
-            return "CLUBS";
+            ss =  "CLUBS";
             break;
         case DIAMONDS:
-            return "DIAMONDS";
+            ss =  "DIAMONDS";
             break;
         case HEARTS:
-            return "HEARTS";
+            ss =  "HEARTS";
             break;
         case SPADES:
-            return "SPADES";
-            break;
-        default:
+            ss =  "SPADES";
             break;
     }
+    return ss;
 }
-string rankToString(enum Rank r){
-    switch (r) {
+string rankToString(CardStruct theCard){
+    string rr;
+    switch (theCard.r) {
         case TWO:
-            return "TWO";
+            rr =  "TWO";
             break;
         case THREE:
-            return "THREE";
+            rr =  "THREE";
             break;
         case FOUR:
-            return "FOUR";
+            rr =  "FOUR";
             break;
         case FIVE:
-            return "FIVE";
+            rr =  "FIVE";
             break;
         case SIX:
-            return "SIX";
+            rr =  "SIX";
             break;
         case SEVEN:
-            return "SEVEN";
+            rr =  "SEVEN";
             break;
         case EIGHT:
-            return "EIGHT";
+            rr =  "EIGHT";
             break;
         case NINE:
-            return "NINE";
+            rr =  "NINE";
             break;
         case TEN:
-            return "TEN";
+            rr =  "TEN";
             break;
         case JACK:
-            return "JACK";
+            rr =  "JACK";
             break;
         case QUEEN:
-            return "QUEEN";
+            rr =  "QUEEN";
             break;
         case KING:
-            return "KING";
+            rr =  "KING";
             break;
         case ACE:
-            return "ACE";
-            break;
-        default:
+            rr =  "ACE";
             break;
     }
-    
+    return rr;
 }
 
 
 int main(){
 
     struct CardStruct card;
-    card.Suit = 0;
-    card.Rank = 2;
+    card.s = {CLUBS};
+    card.r = {THREE};
     
+    toString(card);
     
 }
