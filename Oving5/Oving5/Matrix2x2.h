@@ -34,7 +34,6 @@ public:
     Matrix2x2& operator+=( const Matrix2x2& rhs);
     Matrix2x2& operator-=( const Matrix2x2& rhs);
     Vector2 operator*(const Vector2& rhs);
-    Vector2 Matrix2x2::operator\(const Vector2& rhs)
     // OPPGAVE 2A, funksjonen er dum
     friend std::ostream &operator<<(std::ostream &out, const Matrix2x2 &matrix);
 };

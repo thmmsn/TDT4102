@@ -21,7 +21,7 @@ int main() {
 
     double ka,kb,kc,kd,kp,kq;
     Vector2 kx;
-    cout << "LINJÆRE LIGNINGSSYSTEMER" << endl << "* * VERSION 1.0 Beta * *" << endl;
+    cout << "LINJÆRE LIGNINGSSYSTEMER" << endl << "* * VERSION 1.0 Beta 2 * *" << endl;
     cout << "ax + by = p" << endl << "cx + dy = q" << endl;
     cout << "Ax = b" << endl;
     

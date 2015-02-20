@@ -152,9 +152,7 @@ Vector2 Matrix2x2::operator*(const Vector2& rhs){       // set()
 }
 
 
-Vector2 Matrix2x2::operator\(const Vector2& rhs){
 
-}
 
 
 
