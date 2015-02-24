@@ -9,7 +9,6 @@
 #include <stdio.h>
 #include <iostream>
 #include <string>
-<<<<<<< HEAD
 
 using namespace std;
 
