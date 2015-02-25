@@ -38,6 +38,4 @@ public:
     friend std::ostream &operator<<(std::ostream &out, const Matrix2x2 &matrix);
 };
 
-
-
 #endif /* defined(__Oving5__Matrix2x2__) */

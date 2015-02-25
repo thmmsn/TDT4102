@@ -47,12 +47,9 @@ double Vector2::length() const{
 double Vector2::get(int i) const{
     return this->vec[i];
 }
-
 void Vector2::set(int i, double j){
     this->vec[i] = j;
 }
-
-
 std::ostream &operator<<(std::ostream &out, const Vector2 &vec){
     out << "[";
     for (int i = 0; i<2; i++) {
@@ -93,11 +90,3 @@ Vector2& Vector2::operator+=( const Vector2& rhs){
 Vector2& Vector2::operator-=( const Vector2& rhs){
     return *this = *this - rhs;
 }
-
-
-
-
-
-
-
-

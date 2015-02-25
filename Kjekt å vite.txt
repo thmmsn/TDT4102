@@ -80,6 +80,9 @@ variabel+ 		: betyr variabel = variabel + 1
 variabel++ 	: er variabel = variabel + 2
 33.0 % 3.0 	: gir ikke mening modulo int % int = int
 
+0000 0000 = 0 = ‘\0’, er nulltermineringstegnet
+
+
 ## VARIABLER
 - Globale variabler bør begrenses til det strengt nødvendige
 — anvendelige 
@@ -143,3 +146,15 @@ tilgang til en datatype som heter vector. En container tilsvarende en tabell.
 int main(){
 	
 }
+
+# IOSTREAMS (lese/skrive filer)
+
+
+## Filer
+#include <fstream>
+- tekstfiler
+- bilder
+
+input håndteres av ‘ifstream’, output av ‘ofstream’
+
+while(getline(input, s))
