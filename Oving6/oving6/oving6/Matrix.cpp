@@ -9,12 +9,12 @@
 #include <iostream>
 #include "Matrix.h"
 
-std::ostream &operator<<(std::ostream &out, const Matrix &matrix){
+std::ostream &operator<<(std::ostream &out, const Matrix &rhs){
   
-    for (int r = 0; r < matrix.getNumRows(); r++) {
+    for (int r = 0; r < rhs.nRows; r++) {
         //out << matrix.get(r, 0);
-        for (int c = 0; c < matrix.getNumColumns(); c++) {
-            out << " " << matrix.get(r, c);
+        for (int c = 0; c < rhs.getNumColumns(); c++) {
+            out << " " << rhs.get(r, c);
         }
         out << std::endl;
     }
@@ -27,8 +27,8 @@ Matrix &Matrix::operator=(Matrix rhs ){
     std::swap(this->nColumns,rhs.nColumns);
     return *this;
 }
-Matrix &Matrix::operator+=(Matrix &rhs){
- /*
+Matrix &Matrix::operator+=(const Matrix &rhs){
+ 
     bool cLHS = this->isValid();
     bool cRHS = rhs.isValid();
     
@@ -47,16 +47,14 @@ Matrix &Matrix::operator+=(Matrix &rhs){
         this->mat = nullptr;
         std::cout << "Feil dimensjon" << std::endl;
     }
-  */
+  
     
-    return *this = *this + rhs;
+    return *this;
 }
-Matrix &Matrix::operator+(Matrix &rhs){
+Matrix Matrix::operator+(const Matrix &rhs) const{
     Matrix result(rhs.nRows, rhs.nColumns);
-    bool cLHS = this->isValid();
-    bool cRHS = rhs.isValid();
     
-    if ((cLHS * cRHS != 0) && (this->nRows == rhs.nRows) && (this->nColumns == rhs.nColumns)) {
+    if ((this->nRows == rhs.nRows) && (this->nColumns == rhs.nColumns)) {
 
         for (int i = 0; i < rhs.nRows; i++) {
             
@@ -68,11 +66,12 @@ Matrix &Matrix::operator+(Matrix &rhs){
     }
     
     else {
+        
         result.mat = nullptr;
         std::cout << "ERROR: Feil dimensjon" << std::endl;
     }
     
-    return giresult;
+    return result;
 
 
 }
@@ -111,6 +110,23 @@ Matrix::Matrix(unsigned int y) : Matrix(y,y) {
         mat[i][i] = 1;
     }
 }
+
+Matrix::Matrix(const Matrix &rhs){
+    for (int i = 0; i < rhs.nRows; i++) {
+        for (int j = 0; j < rhs.nColumns; j++) {
+            this->set(i, j, rhs.get(i, j));
+        }
+    }
+}
+
+Matrix::~Matrix(){
+
+    for (int i = 0; i < this->nColumns; i++) {
+        delete [] mat[i];
+    }
+
+}
+
 double Matrix::get(unsigned int i, unsigned int j) const{
     
     /*
@@ -127,7 +143,7 @@ void Matrix::set(unsigned int i, unsigned int j, double value){
      * Setter verdien til element (i,j)
      */
     
-    mat[i][j] = value;
+    this->mat[i][j] = value;
     
 }
 bool Matrix::isValid() const{

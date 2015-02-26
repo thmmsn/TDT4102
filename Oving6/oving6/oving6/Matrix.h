@@ -14,11 +14,14 @@
 class Matrix{
 private:
     double **mat;
-    int nRows, nColumns;
+    unsigned int nRows, nColumns;
 public:
     Matrix();
     Matrix(unsigned int nRows, unsigned int nColumns);
+    //~Matrix(); //destruktør
     explicit Matrix(unsigned int i);
+    Matrix(const Matrix & rhs);
+    
     double get(unsigned int i, unsigned int j) const;
     void set(unsigned int i, unsigned int j, double value);
     bool isValid() const;
@@ -28,8 +31,8 @@ public:
     void randomGenerator();
 
     Matrix &operator=(Matrix rhs);
-    Matrix &operator+=(Matrix &rhs);
-    Matrix &operator+(Matrix &rhs);
+    Matrix &operator+=(const Matrix &rhs);
+    Matrix operator+(const Matrix &rhs) const;
     friend std::ostream &operator<<(std::ostream &out, const Matrix &matrix);
 };
 
