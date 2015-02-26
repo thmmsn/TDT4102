@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		356E68F11A9F45FE0004ADD2 /* fibonacci.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 356E68EF1A9F45FD0004ADD2 /* fibonacci.cpp */; };
+		356E68F41A9F4A150004ADD2 /* Matrix.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 356E68F21A9F4A150004ADD2 /* Matrix.cpp */; };
 		358131D11A967FD000D1100D /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 358131D01A967FD000D1100D /* main.cpp */; };
 /* End PBXBuildFile section */
 
@@ -23,6 +25,10 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		356E68EF1A9F45FD0004ADD2 /* fibonacci.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = fibonacci.cpp; sourceTree = "<group>"; };
+		356E68F01A9F45FE0004ADD2 /* fibonacci.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fibonacci.h; sourceTree = "<group>"; };
+		356E68F21A9F4A150004ADD2 /* Matrix.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Matrix.cpp; sourceTree = "<group>"; };
+		356E68F31A9F4A150004ADD2 /* Matrix.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Matrix.h; sourceTree = "<group>"; };
 		358131CD1A967FD000D1100D /* oving6 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = oving6; sourceTree = BUILT_PRODUCTS_DIR; };
 		358131D01A967FD000D1100D /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -58,6 +64,10 @@
 			isa = PBXGroup;
 			children = (
 				358131D01A967FD000D1100D /* main.cpp */,
+				356E68F21A9F4A150004ADD2 /* Matrix.cpp */,
+				356E68F31A9F4A150004ADD2 /* Matrix.h */,
+				356E68EF1A9F45FD0004ADD2 /* fibonacci.cpp */,
+				356E68F01A9F45FE0004ADD2 /* fibonacci.h */,
 			);
 			path = oving6;
 			sourceTree = "<group>";
@@ -118,6 +128,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				356E68F41A9F4A150004ADD2 /* Matrix.cpp in Sources */,
+				356E68F11A9F45FE0004ADD2 /* fibonacci.cpp in Sources */,
 				358131D11A967FD000D1100D /* main.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -232,6 +244,7 @@
 				358131D61A967FD000D1100D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
