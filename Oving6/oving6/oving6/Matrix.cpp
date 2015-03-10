@@ -55,7 +55,7 @@ Matrix Matrix::operator+(const Matrix &rhs) const{
     Matrix result(rhs.nRows, rhs.nColumns);
     
     if ((this->nRows == rhs.nRows) && (this->nColumns == rhs.nColumns)) {
-
+        
         for (int i = 0; i < rhs.nRows; i++) {
             
             for (int j = 0; j < rhs.nColumns; j++) {
@@ -72,8 +72,8 @@ Matrix Matrix::operator+(const Matrix &rhs) const{
     }
     
     return result;
-
-
+    
+    
 }
 Matrix::Matrix(){
     
@@ -110,7 +110,6 @@ Matrix::Matrix(unsigned int y) : Matrix(y,y) {
         mat[i][i] = 1;
     }
 }
-
 Matrix::Matrix(const Matrix &rhs){
     for (int i = 0; i < rhs.nRows; i++) {
         for (int j = 0; j < rhs.nColumns; j++) {
@@ -118,15 +117,13 @@ Matrix::Matrix(const Matrix &rhs){
         }
     }
 }
-
 Matrix::~Matrix(){
 
-    for (int i = 0; i < this->nColumns; i++) {
-        delete [] mat[i];
+    for (int i = 0; i < this->nRows; i++) {
+              delete[] mat[i];
     }
-
+    delete[] mat;
 }
-
 double Matrix::get(unsigned int i, unsigned int j) const{
     
     /*
@@ -146,6 +143,17 @@ void Matrix::set(unsigned int i, unsigned int j, double value){
     this->mat[i][j] = value;
     
 }
+void Matrix::randomGenerator(){
+    int randomValue;
+    int rows = this->getNumRows();
+    int cols = this->getNumColumns();
+    for (int i = 0; i < rows; i++) {
+        for (int j = 0; j < cols; j++) {
+            randomValue = rand() % 100;
+            this->set(i, j, randomValue);
+        }
+    }
+}
 bool Matrix::isValid() const{
     /*
      * Returnerer true/false om matrisen er gyldig/ugyldig
@@ -160,15 +168,5 @@ int Matrix::getNumRows() const{
 int Matrix::getNumColumns() const{
     return nColumns;
 }
-void Matrix::randomGenerator(){
-    int randomValue;
-    int rows = this->getNumRows();
-    int cols = this->getNumColumns();
-    for (int i = 0; i < rows; i++) {
-        for (int j = 0; j < cols; j++) {
-            randomValue = rand() % 100;
-            this->set(i, j, randomValue);
-        }
-    }
-}
+
 

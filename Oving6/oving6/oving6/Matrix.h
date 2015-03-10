@@ -18,7 +18,7 @@ private:
 public:
     Matrix();
     Matrix(unsigned int nRows, unsigned int nColumns);
-    //~Matrix(); //destruktør
+    ~Matrix(); //destruktør
     explicit Matrix(unsigned int i);
     Matrix(const Matrix & rhs);
     
