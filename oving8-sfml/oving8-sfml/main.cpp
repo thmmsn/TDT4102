@@ -9,8 +9,6 @@
 
 #include "minesweeper.h"
 
-#pragma once
-
 using namespace std;
 
 const sf::Color open_fill_color = sf::Color::White, closed_fill_color(192, 192, 192);

@@ -1,13 +1,16 @@
-//#pragma once
+#pragma once
+
+struct Tile{
+    bool open;
+    bool mine;
+    
+}
 
 class Minesweeper {
 private:
     // Legg til de medlemsvariablene og hjelpefunksjonene du trenger
-    struct Tile{
-    
-    
-        
-    }
+    Tile **mat;
+    int row, col;
 public:
     Minesweeper(int width, int height, int mines);
     ~Minesweeper();
