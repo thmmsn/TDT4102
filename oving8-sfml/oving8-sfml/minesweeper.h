@@ -3,7 +3,7 @@
 struct Tile{
     bool open;
     bool mine;
-    
+    Tile();
 };
 
 class Minesweeper {

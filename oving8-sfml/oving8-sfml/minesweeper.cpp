@@ -1,6 +1,12 @@
 #include <stdlib.h>
+#include <unistd.h>
 #include "minesweeper.h"
+#include <algorithm>
 
+Tile::Tile(){
+    open = false;
+    mine = false;
+}
 Minesweeper::Minesweeper(int width, int height, int mines) {
     row = width;
     col = height;
@@ -20,6 +26,7 @@ Minesweeper::Minesweeper(int width, int height, int mines) {
             mat[x][y].mine = true;
             mines--;
         }
+        
     }
 }
 
@@ -76,6 +83,17 @@ void Minesweeper::openTile(int row, int col) {
 }
 
 int Minesweeper::numAdjacentMines(int row, int col) const {
-    return 0;
+    
+    int nhbMines = 0;
+    
+    for (int i = std::max(row-1,0); i<std::min(row+2,this->row); i++) {
+        for (int j = std::max(col-1,0); j<std::min(col+2,this->col); j++) {
+            if (isTileMine(i, j)){
+                nhbMines++;
+            }
+        }
+    }
+    
+    return nhbMines;
 }
 

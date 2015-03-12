@@ -35,7 +35,7 @@ int main() {
     srand(time(nullptr));
     
     sf::Font font;
-    if (!font.loadFromFile( "sensation.ttf"   )){
+    if (!font.loadFromFile( "sansation.ttf"   )){
         cout << "Fant ikke skrifttypen 'sansation.ttf'" << endl;
         exit(0);
     }
