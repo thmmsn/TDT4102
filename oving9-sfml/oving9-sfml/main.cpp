@@ -3,6 +3,9 @@
 #include <cstdlib>
 #include <ctime>
 #include <iostream>
+#include "SFML/sfml-system.h"
+#include "SFML/sfml-window.h"
+#include 
 
 #include "minesweeper.h"
 
