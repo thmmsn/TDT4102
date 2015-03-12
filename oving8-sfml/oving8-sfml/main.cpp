@@ -5,11 +5,13 @@
 #include <iostream>
 #include <SFML/System.hpp>
 #include <SFML/Window.hpp>
-
-
+#include <time.h>
+#include <stdlib.h>
 #include "minesweeper.h"
 
 using namespace std;
+
+
 
 const sf::Color open_fill_color = sf::Color::White, closed_fill_color(192, 192, 192);
 const sf::Color number_colors[9] = {
@@ -29,10 +31,11 @@ const int tile_size = 32;
 const int border_size = 2;
 
 int main() {
+    srand(time(NULL));
     srand(time(nullptr));
     
     sf::Font font;
-    if (!font.loadFromFile("sansation.ttf")){
+    if (!font.loadFromFile( "sensation.ttf"   )){
         cout << "Fant ikke skrifttypen 'sansation.ttf'" << endl;
         exit(0);
     }

@@ -4,13 +4,14 @@ struct Tile{
     bool open;
     bool mine;
     
-}
+};
 
 class Minesweeper {
 private:
     // Legg til de medlemsvariablene og hjelpefunksjonene du trenger
     Tile **mat;
     int row, col;
+    bool play;
 public:
     Minesweeper(int width, int height, int mines);
     ~Minesweeper();
