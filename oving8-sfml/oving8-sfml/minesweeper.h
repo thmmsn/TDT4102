@@ -3,6 +3,8 @@
 struct Tile{
     bool open;
     bool mine;
+    int value;
+    bool flag;
     Tile();
 };
 
@@ -17,11 +19,11 @@ public:
     ~Minesweeper();
     
     bool isGameOver() const;
-    
+    bool isInside(int x, int y) const;
     bool isTileOpen(int row, int col) const;
     bool isTileMine(int row, int col) const;
-    
     void openTile(int row, int col);
+    //void openTile(int row, int col);
     
     int numAdjacentMines(int row, int col) const;
     

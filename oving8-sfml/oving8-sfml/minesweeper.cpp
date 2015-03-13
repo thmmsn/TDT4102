@@ -44,14 +44,7 @@ bool Minesweeper::isGameOver() const {
 
 bool Minesweeper::isTileOpen(int row, int col) const {
     // Sjekker om element row,col er åpnet
-    
-
-    if (mat[row][col].open == true) {
-        return true;
-    }
-    else if (mat[row][col].open == false){
-        return false;
-    }
+    return mat[row][col].open ;
 }
 
 bool Minesweeper::isTileMine(int row, int col) const {
@@ -59,7 +52,7 @@ bool Minesweeper::isTileMine(int row, int col) const {
     // Sjekker om element mat(row, col) inneholder en mine.
     //
     
-    if (mat[row][col].mine == true) {
+    if (mat[row][col].mine) {
         return true;
     }
     else{
@@ -68,11 +61,49 @@ bool Minesweeper::isTileMine(int row, int col) const {
 
 }
 
-void Minesweeper::openTile(int row, int col) {
+bool Minesweeper::isInside(int x, int y) const{
+    return (x > -1 && y > -1 && x < row && y < col);
+}
+
+void Minesweeper::openTile(int row, int col){
+
+    if (!isInside(row, col) || mat[row][col].open ) {
+        return;
+    }
+    if(isTileMine(row,col)){
+        play=false;
+    }
+    int numMines = numAdjacentMines(row, col);
+    mat[row][col].value = numMines;
+    mat[row][col].open = true;
+    
+    if (numMines) {
+        return;
+    }
+    
+    for (int i = -1; i<2; i++){
+        for (int j = -1; j<2; j++) {
+            if (i == 0 && j == 0) {
+                continue;
+            }
+            openTile(row+i, col+j); //åpner rutene rekursivt
+        }
+    }
+    
+
+}
+
+/*void Minesweeper::openTile(int row, int col) {
     bool open = Minesweeper::isTileOpen(row, col);
-    if (open == false) {
+    
+    if (!isTileOpen(row, col)) {
         mat[row][col].open = true;
-        if (mat[row][col].mine == true) {
+        
+        while () {
+            
+        }
+        
+        if (isTileMine(row, col)) {
             play = false;
             isGameOver();
         }
@@ -80,13 +111,14 @@ void Minesweeper::openTile(int row, int col) {
     else {
         // SETT INN FEILMELDING HER [##]
     }
-}
+}*/
 
 int Minesweeper::numAdjacentMines(int row, int col) const {
     
     int nhbMines = 0;
     
     for (int i = std::max(row-1,0); i<std::min(row+2,this->row); i++) {
+        
         for (int j = std::max(col-1,0); j<std::min(col+2,this->col); j++) {
             if (isTileMine(i, j)){
                 nhbMines++;

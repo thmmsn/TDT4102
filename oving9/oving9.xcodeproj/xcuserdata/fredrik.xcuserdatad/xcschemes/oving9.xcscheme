@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "352C36011AAF21F800D13E42"
-               BuildableName = "oving9-sfml"
-               BlueprintName = "oving9-sfml"
-               ReferencedContainer = "container:oving9-sfml.xcodeproj">
+               BlueprintIdentifier = "35BE84921AB302B50035BB28"
+               BuildableName = "oving9"
+               BlueprintName = "oving9"
+               ReferencedContainer = "container:oving9.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -32,10 +32,10 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "352C36011AAF21F800D13E42"
-            BuildableName = "oving9-sfml"
-            BlueprintName = "oving9-sfml"
-            ReferencedContainer = "container:oving9-sfml.xcodeproj">
+            BlueprintIdentifier = "35BE84921AB302B50035BB28"
+            BuildableName = "oving9"
+            BlueprintName = "oving9"
+            ReferencedContainer = "container:oving9.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </TestAction>
@@ -51,10 +51,10 @@
       <BuildableProductRunnable>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "352C36011AAF21F800D13E42"
-            BuildableName = "oving9-sfml"
-            BlueprintName = "oving9-sfml"
-            ReferencedContainer = "container:oving9-sfml.xcodeproj">
+            BlueprintIdentifier = "35BE84921AB302B50035BB28"
+            BuildableName = "oving9"
+            BlueprintName = "oving9"
+            ReferencedContainer = "container:oving9.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -69,10 +69,10 @@
       <BuildableProductRunnable>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "352C36011AAF21F800D13E42"
-            BuildableName = "oving9-sfml"
-            BlueprintName = "oving9-sfml"
-            ReferencedContainer = "container:oving9-sfml.xcodeproj">
+            BlueprintIdentifier = "35BE84921AB302B50035BB28"
+            BuildableName = "oving9"
+            BlueprintName = "oving9"
+            ReferencedContainer = "container:oving9.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

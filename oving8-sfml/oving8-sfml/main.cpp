@@ -11,7 +11,7 @@
 
 using namespace std;
 
-
+// UTENFOR MAIN
 
 const sf::Color open_fill_color = sf::Color::White, closed_fill_color(192, 192, 192);
 const sf::Color number_colors[9] = {
@@ -29,6 +29,8 @@ const sf::Color mine_color = sf::Color::Red;
 
 const int tile_size = 32;
 const int border_size = 2;
+
+// UTENFOR MAIN SLUTT
 
 int main() {
     srand(time(NULL));
