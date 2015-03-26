@@ -158,3 +158,19 @@ int main(){
 input håndteres av ‘ifstream’, output av ‘ofstream’
 
 while(getline(input, s))
+
+# Lenkede datastrukturer
+- Organisere samlinger av objekter (av samme type)
+- Består av objekter som holder data og er “lenket” sammen ved hjelp av pekere. 
+— har andre egenskaper enn array-basert organisering
+
+
+## Lenkede lister
+hver node har en peker, til en peker
+
+! peker til starten på lista, bruker egenvariabelen til dette. Det er god skikk å bruke next == nullptrs for å finne siste node. Kan også ha en egen peker til det siste elementet.
+
+## Nøstede klasser
+legger en klasse inn i en klasse
+
+
