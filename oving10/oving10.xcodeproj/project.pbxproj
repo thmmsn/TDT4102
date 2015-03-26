@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		3501991D1AC416BB002258D0 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3501991C1AC416BB002258D0 /* main.cpp */; };
+		350199281AC4236E002258D0 /* simpleSet.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 350199261AC4236E002258D0 /* simpleSet.cpp */; };
+		3501992B1AC44170002258D0 /* Person.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 350199291AC44170002258D0 /* Person.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +27,11 @@
 /* Begin PBXFileReference section */
 		350199191AC416BB002258D0 /* oving10 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = oving10; sourceTree = BUILT_PRODUCTS_DIR; };
 		3501991C1AC416BB002258D0 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		350199251AC420BA002258D0 /* templates.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = templates.h; sourceTree = "<group>"; };
+		350199261AC4236E002258D0 /* simpleSet.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = simpleSet.cpp; sourceTree = "<group>"; };
+		350199271AC4236E002258D0 /* simpleSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = simpleSet.h; sourceTree = "<group>"; };
+		350199291AC44170002258D0 /* Person.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Person.cpp; sourceTree = "<group>"; };
+		3501992A1AC44170002258D0 /* Person.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +65,11 @@
 			isa = PBXGroup;
 			children = (
 				3501991C1AC416BB002258D0 /* main.cpp */,
+				350199291AC44170002258D0 /* Person.cpp */,
+				3501992A1AC44170002258D0 /* Person.h */,
+				350199251AC420BA002258D0 /* templates.h */,
+				350199261AC4236E002258D0 /* simpleSet.cpp */,
+				350199271AC4236E002258D0 /* simpleSet.h */,
 			);
 			path = oving10;
 			sourceTree = "<group>";
@@ -118,6 +130,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				350199281AC4236E002258D0 /* simpleSet.cpp in Sources */,
+				3501992B1AC44170002258D0 /* Person.cpp in Sources */,
 				3501991D1AC416BB002258D0 /* main.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
