@@ -15,7 +15,8 @@
 #include "Person.h"
 
 
-/*std::vector<std::string> replace(std::vector<std::string> strVec, std::string old, std::string rep){
+
+std::vector<std::string> replace(std::vector<std::string> strVec, std::string old, std::string rep){
     
     std::vector<std::string>::iterator it;
     
@@ -27,10 +28,10 @@
     }
     
     return strVec;
-}*/
+}
 
-void insertOrdered(std::list<Person> a, Person p);
-void printPersoner(std::list<Person> a);
+//void insertOrdered(std::list<Person> a, Person p);
+//void printPersoner(std::list<Person> a);
 
 
 int main(){
@@ -65,26 +66,30 @@ int main(){
     }
 
   */
-    
-    /*std::list<Person> personer;
+    /* Oppgave 4
+    std::list<Person> personer;
     
     insertOrdered(personer, Person("Geir", "Ovesen"));
     insertOrdered(personer, Person("Geir", "Hansen"));
     
     std::list<Person>::iterator it;
     
-    printPersoner(personer);
+    printPersoner(personer);    //
+    
+    
      */
     
-    SimpleSet::SimpleSet<int>() Set;
-    for (int i = 0; i<101; i++) {
-        Set.insert(i);
-    }
+    
+    /* Oppgave 6 */
+    
+    //void oppg6();
+    //void oppg7();
     
     
 }
 
-/*void insertOrdered(std::list<Person> a, Person p){
+// OPPGAVE 4
+void insertOrdered(std::list<Person> a, Person p){
     
     std::list<Person>::iterator it;
     bool inserted = false;
@@ -111,7 +116,83 @@ void printPersoner(std::list<Person> a){
     }
     
 }
-*/
+
+
+
+std::ostream &operator <<(std::ostream& print, const std::vector<int> &vector)
+{
+    int count = 1;
+    for (int i = 0; i < vector.size(); ++i)
+    {
+        std::cout << vector[i];
+        if (count % 10 == 0)
+        {
+            std::cout << '\n';
+        }
+        count++;
+    }
+    print << '\n';
+    return print;
+}
+
+bool isPrime(int i){
+    for (int j = 2; j < i; j++){
+        if (i%j == 0)
+        {
+            return false;
+        }
+        
+    }
+    return true;
+}
+
+void removeModN(int &length, std::vector<int> &v)
+{
+    std::vector<int> vec;
+    for (int i = 0; i<100; i++){
+        vec.push_back(i);
+    }
+    
+    for (int i = 0; i < v.size(); i++){
+        std::cout << std::endl << v;
+        
+        std::cout << v.at(i) <<" , i = "<< i << std::endl << std::endl;
+        
+        if (isPrime(v.at(i)) == false)
+        {
+            v.erase(v.begin() + i);
+            i--;
+        }
+    }
+    
+    std::cout<< "Prime numbers are:\n";
+    std::cout << v ;
+    
+    std::vector<int>::iterator it;
+    
+    for(it = v.begin(); it != vec.end();it++){
+        std::cout << *it << std::endl;
+    }
+}
+
+
+void oppg6(){
+
+    std::vector<int> vec;
+    int length = 100;
+    removeModN(length, vec);
+}
+
+
+
+
+
+
+
+
+
+
+
 
 
 

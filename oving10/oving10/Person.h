@@ -19,7 +19,24 @@ private:
     std::string eNavn;
     std::vector<std::string> strVec = {fNavn, eNavn};
 public:
-    bool operator>(const Person&);
+    bool operator>(const Person& rhs){
+        if( this->eNavn > rhs.eNavn){
+            return  true;
+        }
+        else if( rhs.eNavn > eNavn){
+            return false;
+        }
+        else{
+            if (fNavn > rhs.fNavn) {
+                return true;
+            }
+            else if (rhs.fNavn > fNavn){
+                return false;
+            }
+            else{
+                return false;
+            }
+        }};
     Person();
     Person(std::string a, std::string b);
     void print();
@@ -27,7 +44,7 @@ public:
     
 };
 
-class Katalog{ // Kan forsøke å bruke SimpleSet
+class Katalog{ 
     
 private:
     std::list<Person> nList;
@@ -37,24 +54,6 @@ public:
     
 };
 
-bool Person::operator>(const Person& rhs){
-    if( this->eNavn > rhs.eNavn){
-        return  true;
-    }
-    else if( rhs.eNavn > eNavn){
-        return false;
-    }
-    else{
-        if (fNavn > rhs.fNavn) {
-            return true;
-        }
-        else if (rhs.fNavn > fNavn){
-            return false;
-        }
-        else{
-            return false;
-        }
-    }
-};
+
 
 #endif /* defined(__oving10__Person__) */
