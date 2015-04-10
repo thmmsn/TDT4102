@@ -173,4 +173,16 @@ hver node har en peker, til en peker
 ## Nøstede klasser
 legger en klasse inn i en klasse
 
+# UNNTAKSHÅNDTERING (Kap. 18)
+- en mekanisme for å håndtere “unntaksvise” hendelser
+* Foreløpig har vi kun vært innom “sikre” funksjoner som hvor det ble anvendt “korrekte” parameterverdier. 
+- generell mekanisme for å håndtere og si fra at en feilsituasjon har oppstått. 
 
+double fart(int km, int minutter){
+	return km/minutter/60;
+}
+
+int main(){
+	cout << “fart=“ << fart(200,120) << endl;
+	cout << “fart=“ << fart(-200,0) << endl;
+}
