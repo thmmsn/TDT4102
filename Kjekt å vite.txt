@@ -186,3 +186,48 @@ int main(){
 	cout << “fart=“ << fart(200,120) << endl;
 	cout << “fart=“ << fart(-200,0) << endl;
 }
+
+# 140415
+
+#include “diverse”
+
+int calculate( int x, int y, int (*foo(int, int)) ){ //deklarere at vi tar inn en peker til en funksjon, med parameterliste int int. c++ konverterer argumentet til en peker
+
+	int temp = foo(x,y);
+	return temp;
+
+}
+
+int sum(int x, int y){
+	return x+y
+}
+
+int product(int x, int y){
+	return x * y;
+}
+
+bool compareByDate(const Person &lhs, const Person %rhs){
+
+	return lhs.getBirthdate() < rhs.getBirthdate;
+
+}
+
+class Compare{
+public:
+	bool operator()(Person lhs, Person rhs);	
+}; // nå kan denne klassen brukes til å sammenligne
+
+Compare c; //vil returnere bool b = c(x,y);
+
+int main(){
+
+	int a = caluclate(3, 4, sum); // :D
+	int b = calculate(3,4, product); 
+
+	vector<Person> persons;
+	addPersons(person);
+	sort(person.begin(), person.end());
+	for (auto &p : person){
+		cout << p << endl;
+	}
+}
