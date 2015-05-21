@@ -1,15 +1,16 @@
 #include <iostream>
 #include "safearray.h"
 #include "fancysafearray.h"
+#include "sudoku.h"
 
 using namespace std;
 
-int main() {
+/*int main() {
 	SafeArray<int> A(10);
 	for (int i = 0; i < A.size(); i++) {
 		A[i] = i;
 	}
-	// Sjekke at de kan endres:
+	// Se kan endres:
 	for (int i = 0; i < A.size(); i++) {
 		A[i] = A[i] * 2;
 	}
@@ -94,4 +95,22 @@ int main() {
 	} catch (std::out_of_range &e) {
 		cout << "Exception: " << e.what() << endl;
 	}
+}
+ */
+
+int main() {
+    Sudoku s;
+    try {
+        s.loadFromFile("b.txt");
+        
+    } catch (IllegalSudokuMoveException &e) {
+        cout << "Invalid sudoku board: " << e.what() << endl;
+        return 0;
+        
+    } catch (std::exception &e) {
+        cout << e.what() << endl;
+        return 0;
+    }
+    s.solve();
+    s.writeToFile("output.txt");
 }

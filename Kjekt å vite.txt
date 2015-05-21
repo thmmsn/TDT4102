@@ -189,6 +189,9 @@ int main(){
 
 # 140415
 
+“lambdauttrykk”
+
+
 #include “diverse”
 
 int calculate( int x, int y, int (*foo(int, int)) ){ //deklarere at vi tar inn en peker til en funksjon, med parameterliste int int. c++ konverterer argumentet til en peker

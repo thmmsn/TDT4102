@@ -26,7 +26,7 @@
 /* Begin PBXFileReference section */
 		355E21531AD68D0000867EB0 /* oving11 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = oving11; sourceTree = BUILT_PRODUCTS_DIR; };
 		355E21561AD68D0000867EB0 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
-		355E215D1AD68D4800867EB0 /* board.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = board.txt; sourceTree = "<group>"; };
+		355E215D1AD68D4800867EB0 /* b.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = b.txt; sourceTree = "<group>"; };
 		355E215E1AD68D4800867EB0 /* fancysafearray.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fancysafearray.h; sourceTree = "<group>"; };
 		355E215F1AD68D4800867EB0 /* oving11no.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = oving11no.pdf; sourceTree = "<group>"; };
 		355E21601AD68D4800867EB0 /* safearray.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = safearray.h; sourceTree = "<group>"; };
@@ -65,7 +65,7 @@
 			isa = PBXGroup;
 			children = (
 				355E21561AD68D0000867EB0 /* main.cpp */,
-				355E215D1AD68D4800867EB0 /* board.txt */,
+				355E215D1AD68D4800867EB0 /* b.txt */,
 				355E215E1AD68D4800867EB0 /* fancysafearray.h */,
 				355E215F1AD68D4800867EB0 /* oving11no.pdf */,
 				355E21601AD68D4800867EB0 /* safearray.h */,
@@ -246,6 +246,7 @@
 				355E215C1AD68D0000867EB0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

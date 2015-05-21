@@ -28,8 +28,6 @@ FancySafeArray<DataType> FancySafeArray<DataType>::operator+(const FancySafeArra
 	return result;
 }
 
-// Begrenser oss til aa bare kunne ha elementer som har <<-operatoren definert.
-// NB: Vi vil ikke vaere friend.
 template<typename DataType>
 std::ostream &operator<<(std::ostream &stream, const FancySafeArray<DataType> &array) {
 	stream << "[";

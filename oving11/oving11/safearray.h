@@ -8,7 +8,6 @@ class SafeArray {
 	DataType *data;
 	int dataSize;
 public:
-	// Kan slaa disse sammen til SafeArray(int numElements = 0)
 	SafeArray();
 	SafeArray(int numElements);
 	SafeArray(const SafeArray &other);
@@ -16,7 +15,7 @@ public:
 	SafeArray &operator=(const SafeArray &rhs);
 	int size() const;
 	DataType &operator[](int elementNum);
-	DataType operator[](int elementNum) const; // For aa kunne gjoere + const.
+	DataType operator[](int elementNum) const;
 	void resize(int newSize);
 };
 
@@ -33,7 +32,7 @@ SafeArray<DataType>::SafeArray(int numElements) : dataSize(numElements) {
 
 template<typename DataType>
 SafeArray<DataType>::SafeArray(const SafeArray &other) {
-	data = NULL; // operator= kjører delete, saa vi maa sette pekeren til NULL her.
+	data = NULL; // setter op til NULL
 	dataSize = 0;
 	*this = other;
 }
@@ -69,7 +68,6 @@ DataType &SafeArray<DataType>::operator[](int elementNum) {
 	return data[elementNum];
 }
 
-// NB: Returtypen er IKKE referanse
 template<typename DataType>
 DataType SafeArray<DataType>::operator[](int elementNum) const {
 	if (elementNum < 0 || elementNum >= dataSize) {

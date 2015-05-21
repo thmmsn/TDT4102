@@ -28,9 +28,9 @@ int Sudoku::getBoxForCoord(int row, int col) {
 	return (row / 3) * 3 + (col / 3);
 }
 
-// f)
+// f) og k)
 void Sudoku::placeNumber(int row, int col, int value) {
-// k)
+
 	Move move;
 	move.row = row;
 	move.col = col;
@@ -40,20 +40,29 @@ void Sudoku::placeNumber(int row, int col, int value) {
 	moves.push_back(move);
 
 	if (value == 0) {
-		// Gjoer ingenting
+		// Gjør ingenting
 	} else if (board[row][col] != 0) {
+        
 		throw NumberAlreadyInPositionException(move);
+        
 	} else if (numAvailableInRow[row].find(value) == numAvailableInRow[row].end()) {
+        
 		throw IllegalSudokuMoveException(move, ALREADY_IN_ROW);
+        
 	}  else if (numAvailableInCol[col].find(value) == numAvailableInCol[col].end()) {
+        
 		throw IllegalSudokuMoveException(move, ALREADY_IN_COL);
+        
 	} else if (numAvailableInBox[getBoxForCoord(row, col)].find(value) == numAvailableInBox[getBoxForCoord(row, col)].end()) {
 		throw IllegalSudokuMoveException(move, ALREADY_IN_BOX);
 	}
 
 	numAvailableInRow[row].erase(value);
+    
 	numAvailableInCol[col].erase(value);
+    
 	numAvailableInBox[getBoxForCoord(row, col)].erase(value);
+    
 	board[row][col] = value;
 }
 
@@ -61,13 +70,11 @@ void Sudoku::placeNumber(int row, int col, int value) {
 set<int> Sudoku::getIntersection(const set<int> &setA, const set<int> &setB, const set<int> &setC) {
 	set<int> intersection = setA;
 	set<int>::iterator it;
-	// Iterer over setA og ikke kopien, slik at vi unngaar
-	// aa slette fra setet vi itererer over mens vi itererer,
-	// ellers maa vi passe paa aa nullstille iteratoren ved sletting.
+
 	for (it = setA.begin(); it != setA.end(); ++it) {
 		int value = *it;
 		if (setB.find(value) != setB.end() && setC.find(value) != setC.end()) {
-			// Do nothing
+			// INGENTING
 		} else {
 			intersection.erase(value);
 		}
@@ -180,7 +187,7 @@ ostream &operator<<(ostream &stream, const Sudoku &sudoku) {
 
 void Sudoku::loadFromFile(string filename) {
 	ifstream file(filename);
-	if (!file) {
+	if (!file.good()) {
 		throw std::runtime_error("Couldn't open file");
 	}
 
@@ -296,7 +303,7 @@ const char *NumberAlreadyInPositionException::what() const throw() {
 	return errorString.c_str();
 }
 
-int main() {
+/*int main() {
 	Sudoku s;
 	try {
 		s.loadFromFile("board.txt");
@@ -310,3 +317,4 @@ int main() {
 	s.solve();
 	s.writeToFile("output.txt");
 }
+ */
